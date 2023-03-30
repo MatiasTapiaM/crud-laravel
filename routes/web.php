@@ -18,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 });
 */
 Route::get("/", [CrudController::class, "index"])->name("crud.index");
+//ruta agregar usuario
+Route::post("/registrar-usuario", [CrudController::class, "create"])->name("crud.create");
